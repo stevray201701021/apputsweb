@@ -1,0 +1,24 @@
+{
+  "name": "apputsweb",
+  "version": "1.0.0",
+  "description": "Aplikasi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevray201701021/apputsweb.git"
+  },
+  "keywords": [
+    "app",
+    "uts",
+    "nodejs"
+  ],
+  "author": "ray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevray201701021/apputsweb/issues"
+  },
+  "homepage": "https://github.com/stevray201701021/apputsweb#readme"
+}
