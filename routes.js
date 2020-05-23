@@ -9,8 +9,13 @@ module.exports = function(app) {
 
     app.route('/tampil')
     .get(jsonku.tampilsemuasparepart);
-}
+
 
 //panggil routes
 app.route('tampil/id')
     .get(jsonku.tampilbedasarkanid)
+
+    app.route('/tambah')
+    .post(jsonku.tambahmontir);
+
+}
