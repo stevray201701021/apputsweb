@@ -17,3 +17,16 @@ exports.tampilsemuasparepart = function(req,res){
     }
     });
 };
+
+// menampilkan id
+
+exports.tampilbedasarkanid = function(req,res){
+    let id = req.params.id;
+    connection.query('SELECT * FROM t_sparepart where id_sparepart', function(error, rows, fields){
+        if(error){
+       console.log(error);
+    } else {
+        response.ok(rows, res)
+    }
+    });
+};

@@ -12,3 +12,5 @@ module.exports = function(app) {
 }
 
 //panggil routes
+app.route('tampil/id')
+    .get(jsonku.tampilbedasarkanid)
