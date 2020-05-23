@@ -31,9 +31,34 @@ exports.tampilbedasarkanid = function(req,res){
     });
 };
 
-//add data montir
-exports.tambahmontir = function(req,res){
-    var id_montir = req.body.id_montir
+exports.tampilsemuamontir = function(req,res){
+    connection.query('SELECT * FROM t_montir', function(error, rows, fields){
+        if(error){
+       console.log(error);
+    } else {
+        response.ok(rows, res)
+    }
+    });
+};
+
+// menampilkan id montir
+
+exports.tampilbedasarkanidmontir = function(req,res){
+    let id = req.params.id;
+    connection.query('SELECT * FROM t_montir where id_montir = ?', function(error, rows, fields){
+        if(error){
+       console.log(error);
+    } else {
+        response.ok(rows, res)
+    }
+    });
+};
+
+
+
+//add data servis
+exports.tambahservis = function(req,res){
+    var id_ = req.body.id_montir
     var nama_montir = req.body.nama_montir
     var iharga_perjam = req.body.harga_perjam
 
