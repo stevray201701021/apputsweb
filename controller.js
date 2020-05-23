@@ -58,12 +58,15 @@ exports.tampilbedasarkanidmontir = function(req,res){
 
 //add data servis
 exports.tambahservis = function(req,res){
-    var id_ = req.body.id_montir
-    var nama_montir = req.body.nama_montir
-    var iharga_perjam = req.body.harga_perjam
-
-    connection.query('INSERT INTO t_montir (id_montir,nama_montir,harga_perjam) VALUES(?,?,?)'),
-    [id_montir,nama_montir,harga_perjam],
+    var id_service = req.body.id_montir
+    var tgl_service = req.body.nama_montir
+    var id_user = req.body.harga_perjam
+    var jumlah_sparepart = req.body.jumlah_sparepart
+    var id_sparepart = req.body.d_sparepart
+    var jam_service = req.body.jam_service
+    var total_service =req.body.total_service
+    connection.query('INSERT INTO t_montir (id_service,tgl_service,id_user,id_montir,jumlah_sparepart,id_sparepart,jam_service,total_service) VALUES(?,?,?,?,?,?,?,?)'),
+    [id_service,tgl_service,id_user,id_montir,jumlah_sparepart,id_sparepart,jam_service,total_service],
     function(error,rows,fields){
     if(error){
         console.log(error);
