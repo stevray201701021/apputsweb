@@ -31,7 +31,7 @@ exports.tampilbedasarkanid = function(req,res){
     });
 };
 
-exports.tampilsemuamontir = function(req,res){
+exports.tampilmontir = function(req,res){
     connection.query('SELECT * FROM t_montir', function(error, rows, fields){
         if(error){
        console.log(error);

@@ -15,7 +15,7 @@ module.exports = function(app) {
     .get(jsonku.tampilbedasarkanid)
 
     app.route('/tampilmontir')
-    .get(jsonku.tampilsemuamontir);
+    .get(jsonku.tampilmontir);
 
 
     app.route('tampil/idmontir')
