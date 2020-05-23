@@ -5,8 +5,10 @@ module.exports = function(app) {
 
     app.route('/')
         .get(jsonku.index);
+
+
+    app.route('/tampil')
+    .get(jsonku.tampilsemuasparepart);
 }
 
 //panggil routes
-
-var routes
